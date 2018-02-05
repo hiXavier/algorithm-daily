@@ -29,18 +29,15 @@ public class TwoSum {
         return indexArray;
     }
 
-    public int[] twoSum2(int[] nums, int target) {
-        int[] indexArray = new int[2];
+    public int[] twoSum2(int[] nums, int target) throws Exception {
+
         Map<Integer,Integer> indexMap = new HashMap<Integer, Integer>();
+
         for (int i = 0; i < nums.length; i++) {
             if(indexMap.containsKey(target - nums[i])){
-                if (nums[i] + nums[j] == target) {
-                    indexArray[0] = i;
-                    indexArray[1] = j;
-                    break;
-                }
+              return new int[]{indexMap.get(target - nums[i]),i};
             }
         }
-        return indexArray;
+        throw  new Exception();
     }
 }
