@@ -1,5 +1,8 @@
 package com.offer.array;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Author wuyanfeng
  * @Description 二维数组行从左到右递增，列从上到下递增，查找某数是否在数组中存在
@@ -45,5 +48,6 @@ public class DyadicArrayNum {
         int[][] ints = {{1, 2, 8, 9}, {2, 4, 9, 12}, {4, 7, 10, 13}, {6, 8, 11, 15}};
         boolean isExist = process(ints, 4, 4, 7);
         System.out.println("存在" + isExist);
+        Map<Integer,Integer> map = new HashMap<>();
     }
 }
