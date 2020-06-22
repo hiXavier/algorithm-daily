@@ -1,7 +1,5 @@
 package com.offer.list;
 
-import java.util.Stack;
-
 /**
  * @Author wuyanfeng
  * @Description
