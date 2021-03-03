@@ -41,12 +41,3 @@ public class PrintBackward {
     }
 }
 
-class ListNode {
-    ListNode next;
-    int val;
-
-    public ListNode(ListNode node, int val) {
-        this.next = node;
-        this.val = val;
-    }
-}
