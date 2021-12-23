@@ -39,12 +39,15 @@ public class MinCoin {
         int[] values = { 3, 5 }; // 硬币面值
         int total = 22; // 总值
         // 求得最小的硬币数量
-        return getMinCounts(total, values); // 输出答案
+        return getMinCountsUpdate(total, values); // 输出答案
+    }
+
+    public static void main(String[] args) {
+        new MinCoin().getMinCountsDPSol();
     }
 
 
     int getMinCountsUpdate(int k, int[] values) {
-        Stack dge  = new Stack<>();
         int[] memo = new int[k + 1]; // 创建备忘录
         memo[0] = 0; // 初始化状态
         for (int i = 1; i < k + 1; i++) { memo[i] = k + 1; }
